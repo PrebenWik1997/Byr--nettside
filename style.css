@@ -535,3 +535,10 @@ footer p {
     text-align: center;
   }
 }
+.skjema-info {
+  font-size: 0.8rem;
+  color: #3a5a7a;
+  text-align: center;
+  margin-top: 8px;
+  line-height: 1.5;
+}
