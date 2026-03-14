@@ -542,3 +542,17 @@ footer p {
   margin-top: 8px;
   line-height: 1.5;
 }
+.footer-kontakt {
+  color: #7a9ab5;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.footer-kontakt a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.footer-kontakt a:hover {
+  text-decoration: underline;
+}
