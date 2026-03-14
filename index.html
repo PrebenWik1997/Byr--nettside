@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Polarsirkelen Digital</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVIGASJON -->
   <nav>
-    <div class="logo">Polarsirkelen Digital</div>
-    <ul>
+    <div class="logo">
+      <img src="logo.jpg" alt="Polarsirkelen Digital" class="logo-img" />
+    </div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul id="nav-menu">
       <li><a href="#tjenester">Tjenester</a></li>
+      <li><a href="#prosess">Prosess</a></li>
       <li><a href="#om">Om oss</a></li>
       <li><a href="#kontakt" class="btn-nav">Kontakt oss</a></li>
     </ul>
@@ -20,28 +25,96 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-innhold">
-      <h1>Vi bygger nettsider som <span>selger</span></h1>
-      <p>Profesjonelle nettsider for bedrifter på Helgeland — fra bunnen av, eller en moderne oppgradering av det du allerede har.</p>
-      <a href="#kontakt" class="btn">Få et gratis tilbud</a>
+      <span class="hero-tag">Webbyrå på Helgeland</span>
+      <h1>Din bedrift fortjener en nettside som <span>imponerer</span></h1>
+      <p>Vi bygger moderne, raske nettsider for bedrifter langs kysten — fra bunnen av, eller en total oppgradering av det du allerede har.</p>
+      <div class="hero-knapper">
+        <a href="#kontakt" class="btn">Få et gratis tilbud</a>
+        <a href="#tjenester" class="btn-outline">Se hva vi gjør</a>
+      </div>
+    </div>
+    <div class="hero-bølge">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#080f1a"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Mobiloptimalisert</p>
+    </div>
+    <div class="stat">
+      <h3>Lokal</h3>
+      <p>Forankret på Helgeland</p>
+    </div>
+    <div class="stat">
+      <h3>Rask</h3>
+      <p>Lynrask lastetid</p>
+    </div>
+    <div class="stat">
+      <h3>Modern</h3>
+      <p>2026-design-standard</p>
     </div>
   </section>
 
   <!-- TJENESTER -->
   <section class="tjenester" id="tjenester">
-    <h2>Hva vi gjør</h2>
+    <div class="seksjon-header">
+      <span class="tag">Hva vi tilbyr</span>
+      <h2>Løsninger som løfter bedriften din</h2>
+      <p>Vi spesialiserer oss på én ting — og gjør det ekstremt godt.</p>
+    </div>
     <div class="kort-grid">
       <div class="kort">
-        <h3>🌐 Ny nettside</h3>
-        <p>Vi bygger moderne, raske og mobilvenlige nettsider fra bunnen av — tilpasset din bedrift.</p>
+        <div class="kort-ikon">🌊</div>
+        <h3>Ny nettside fra bunnen</h3>
+        <p>Vi designer og bygger en skreddersydd nettside som reflekterer din bedrift og konverterer besøkende til kunder.</p>
+      </div>
+      <div class="kort featured">
+        <div class="kort-ikon">🔄</div>
+        <h3>Modernisering av eksisterende nettside</h3>
+        <p>Gammel og sliten nettside? Vi tar det du har og transformerer det til noe du er stolt av å vise frem.</p>
+        <span class="populær">Mest populær</span>
       </div>
       <div class="kort">
-        <h3>🔄 Modernisering</h3>
-        <p>Har du en gammel, sliten nettside? Vi gir den et nytt liv med moderne design og bedre brukeropplevelse.</p>
+        <div class="kort-ikon">📱</div>
+        <h3>Mobil & kryssplattform</h3>
+        <p>Alle nettsider vi leverer er optimalisert for PC, mobil, nettbrett og alle skjermstørrelser.</p>
       </div>
-      <div class="kort">
-        <h3>📱 Mobiloptimalisert</h3>
-        <p>Alle nettsider vi lager fungerer like bra på mobil som på PC — det er slik kundene dine surfer.</p>
+    </div>
+  </section>
+
+  <!-- PROSESS -->
+  <section class="prosess" id="prosess">
+    <div class="seksjon-header">
+      <span class="tag">Slik jobber vi</span>
+      <h2>Fra idé til ferdig nettside</h2>
+    </div>
+    <div class="steg-grid">
+      <div class="steg">
+        <div class="steg-nr">01</div>
+        <h3>Samtale</h3>
+        <p>Vi starter med en gratis prat om din bedrift, dine mål og hva du trenger.</p>
+      </div>
+      <div class="steg">
+        <div class="steg-nr">02</div>
+        <h3>Design</h3>
+        <p>Vi lager et skreddersydd design basert på din identitet og bransje.</p>
+      </div>
+      <div class="steg">
+        <div class="steg-nr">03</div>
+        <h3>Bygging</h3>
+        <p>Vi koder nettsiden — rask, sikker og optimalisert for alle plattformer.</p>
+      </div>
+      <div class="steg">
+        <div class="steg-nr">04</div>
+        <h3>Levering</h3>
+        <p>Du godkjenner, vi publiserer. Du er klar til å ta imot kunder på nett.</p>
       </div>
     </div>
   </section>
@@ -49,27 +122,48 @@
   <!-- OM OSS -->
   <section class="om" id="om">
     <div class="om-innhold">
-      <h2>Om Polarsirkelen Digital</h2>
-      <p>Vi er et lokalt webbyrå på Helgeland med én misjon: å gi lokale bedrifter en nettilstedeværelse de kan være stolte av. Vi kjenner regionen, vi kjenner kundene dine — og vi vet hva som fungerer.</p>
+      <span class="tag">Om oss</span>
+      <h2>Vi er Polarsirkelen Digital</h2>
+      <p>Et webbyrå født og oppvokst på Helgeland. Vi kjenner regionen, vi kjenner næringslivet her — og vi vet at lokale bedrifter fortjener nettsider som holder internasjonalt nivå.</p>
+      <p>Vår filosofi er enkel: en nettside skal ikke bare se bra ut, den skal jobbe for deg døgnet rundt.</p>
+      <a href="#kontakt" class="btn">La oss snakke sammen</a>
     </div>
   </section>
 
   <!-- KONTAKT -->
   <section class="kontakt" id="kontakt">
-    <h2>Ta kontakt</h2>
-    <p>Ønsker du et gratis og uforpliktende tilbud? Send oss en melding.</p>
+    <div class="seksjon-header">
+      <span class="tag">Kom i gang</span>
+      <h2>Få et gratis og uforpliktende tilbud</h2>
+      <p>Fyll ut skjemaet, så tar vi kontakt innen 24 timer.</p>
+    </div>
     <form>
-      <input type="text" placeholder="Navn" required />
-      <input type="email" placeholder="E-post" required />
+      <div class="form-rad">
+        <input type="text" placeholder="Navn" required />
+        <input type="email" placeholder="E-post" required />
+      </div>
+      <input type="text" placeholder="Bedriftsnavn" />
       <textarea placeholder="Hva kan vi hjelpe deg med?" rows="5" required></textarea>
-      <button type="submit">Send melding</button>
+      <button type="submit">Send melding →</button>
     </form>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Polarsirkelen Digital — Hemnesberget, Nordland</p>
+    <div class="footer-innhold">
+      <img src="logo.jpg" alt="Polarsirkelen Digital" class="footer-logo" />
+      <p>Webbyrå for bedrifter på Helgeland</p>
+      <p class="footer-liten">© 2026 Polarsirkelen Digital — Hemnesberget, Nordland</p>
+    </div>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
